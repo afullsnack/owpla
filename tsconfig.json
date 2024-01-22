@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "/Users/fullsnack/Documents/play/owpla/src",
     "strictNullChecks": true,
     "types": [
       "astro/client"
@@ -25,6 +25,8 @@
       "@pages/*": [
         "pages/*"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

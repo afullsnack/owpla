@@ -1,19 +1,38 @@
-<footer class="my-20">
-  <p class="text-center text-sm text-slate-500">
-    Copyright © {new Date().getFullYear()} Astroship. All rights reserved.
+---
+import Icon from "astro-icon";
+---
+
+<footer class="mt-20 bg-[#D4AF37] py-10">
+  <p class="text-center text-2xl font-semibold text-[#990004]">
+    Palace Liason Authority
   </p>
-  <!--
-    Can we ask you a favor 🙏
-    Please keep this backlink on your website if possible.
-    or Purchase a commercial license from https://web3templates.com
-  -->
-  <p class="text-center text-xs text-slate-500 mt-1">
-    Made by <a
-      href="https://web3templates.com"
+
+  <div
+    class="mt-5 md:flex grid items-center w-full justify-center gap-4 flex-wrap">
+    <div class="flex items-center mt-2 space-x-2 text-black">
+      <Icon class="text-black w-4 h-4" name="uil:phone" />
+      <a href="tel:+234 (0) 803712 3122">+234 (0) 803712 3122</a>
+      <a href="tel:+234 (0) 811931 5433">+234 (0) 811931 5433</a>
+    </div>
+    <div class="flex items-center mt-2 space-x-2 text-black">
+      <Icon class="text-black w-4 h-4" name="uil:map-marker" />
+      <span>P. O. Box 1, Warri- Delta State, Nigeria</span>
+    </div>
+    <div class="flex items-center mt-2 space-x-2 text-black">
+      <Icon class="text-black w-4 h-4" name="uil:envelope" /><a
+        href="mailto:Info@owpla.org">Info@owpla.org</a
+      >
+    </div>
+  </div>
+
+  <p class="text-center text-lg font-bold mt-10 text-black mt-1">
+    Powered by <a
+      href="https://ruco.tech"
       target="_blank"
       rel="noopener"
       class="hover:underline">
-      Web3Templates
+      Rucotech
     </a>
+    integrated Services
   </p>
 </footer>
