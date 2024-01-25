@@ -10,10 +10,10 @@ export interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site,
-).toString();
+// const resolvedImageWithDomain = new URL(
+//   "/opengraph.jpg",
+//   Astro.site,
+// ).toString();
 
 const { title } = Astro.props;
 
@@ -37,7 +37,7 @@ const makeTitle = title
       canonical={canonicalURL}
     />
   </head>
-  <body class="w-screen">
+  <body class="w-screen overflow-auto">
     <Navbar />
     <slot />
     <Footer />

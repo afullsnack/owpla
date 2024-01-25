@@ -5,7 +5,7 @@ import Icon from "astro-icon";
 import { Astronav, MenuIcon, MenuItems } from "astro-navbar";
 import Dropdown from "./dropdown.astro";
 
-const menuitems = [
+const menuitems: { title: string; path: string; children?: any[] }[] = [
   {
     title: "Home",
     path: "/",
@@ -23,11 +23,11 @@ const menuitems = [
 
 <>
   <div class="flex w-full p-8 items-center justify-between bg-[#D4AF37]">
-    <div class="flex gap-4 lg:gap-12 text-white font-bold">
+    <div class="flex gap-4 lg:gap-12 text-white font-bold flex-wrap">
       <span>+234 (0) 9031478598</span>
       <span>Info@owpla.org</span>
     </div>
-    <div class="flex gap-4 lg:gap-4 text-white font-bold">
+    <div class="md:flex hidden gap-4 lg:gap-4 text-white font-bold">
       <Icon name="mdi:facebook" class="h-8" />
       <Icon name="mdi:instagram" class="h-8" />
       <Icon name="mdi:twitter" class="h-8" />
@@ -48,7 +48,7 @@ const menuitems = [
         <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
           <ul class="flex flex-col lg:flex-row lg:gap-3">
             {
-              menuitems.map((item, index) => (
+              menuitems.map((item: any, index: number) => (
                 <>
                   {item?.children && (
                     <Dropdown

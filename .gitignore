@@ -25,3 +25,8 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+
+*.zip
+**.zip
+owpla-*.zip
