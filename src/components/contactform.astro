@@ -116,7 +116,7 @@ import Button from "./ui/button.astro";
         console.log(error);
         result.innerHTML = "Something went wrong!";
       })
-      .then(function () {
+      .then(() => {
         form.reset();
         form.classList.remove("was-validated");
         setTimeout(() => {
